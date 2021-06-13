@@ -12,7 +12,7 @@
       footer{
             position: absolute;
             left: 42%;
-            top: 92%;
+            top: 98%;
             bottom: 0%;
             color: #b0acac;
         }
@@ -34,7 +34,7 @@
                 <li><a href="transaction.php">Transaction History</a></li>
               </ul>
             </div>
-          </nav><br><br>
+          </nav>
 <div class="container">
       <table class="table">
           <tr>
