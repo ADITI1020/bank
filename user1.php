@@ -45,7 +45,8 @@
               <th>Operation</th>
           </tr>
             <?php
-          $conn=mysqli_connect("sql6.freemysqlhosting.net","sql6417933","N2sBfMWEYg","sql6417933");
+         // $conn=mysqli_connect("sql6.freemysqlhosting.net","sql6417933","N2sBfMWEYg","sql6417933");
+         $conn=mysqli_connect("bviwddg1tz90z0wafre4-mysql.services.clever-cloud.com", "uviuwebmnzw39gxi","cfNMc3nJk9obhTRRNk34", "bviwddg1tz90z0wafre4");
           $sql="Select Branch_id, Name, Email, Account_Balance from Users";
           $result=$conn->query($sql);
           if($result->num_rows>0){
