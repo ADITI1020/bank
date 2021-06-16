@@ -1,6 +1,7 @@
  <?php
  $from = $_GET['id'];
-$conn=mysqli_connect("sql6.freemysqlhosting.net","sql6417933","N2sBfMWEYg","sql6417933");
+//$conn=mysqli_connect("sql6.freemysqlhosting.net","sql6417933","N2sBfMWEYg","sql6417933");
+$conn=mysqli_connect("bviwddg1tz90z0wafre4-mysql.services.clever-cloud.com", "uviuwebmnzw39gxi","cfNMc3nJk9obhTRRNk34", "bviwddg1tz90z0wafre4");
 if(isset($_POST['submit']))
 {
      
@@ -145,7 +146,8 @@ if(isset($_POST['submit']))
        
      <h2 class="text-center pt-4" style="color : black;"><b>Transfer Money</b></h2>
             <?php
-               $conn=mysqli_connect("sql6.freemysqlhosting.net","sql6417933","N2sBfMWEYg","sql6417933");
+              // $conn=mysqli_connect("sql6.freemysqlhosting.net","sql6417933","N2sBfMWEYg","sql6417933");
+		$conn=mysqli_connect("bviwddg1tz90z0wafre4-mysql.services.clever-cloud.com", "uviuwebmnzw39gxi","cfNMc3nJk9obhTRRNk34", "bviwddg1tz90z0wafre4");
                 $sid=$_GET['id'];
                 $sql = "SELECT * FROM  Users where Branch_Id=$sid";
                 $result=mysqli_query($conn,$sql);
@@ -176,7 +178,8 @@ if(isset($_POST['submit']))
         <select name="to" class="form-control" required>
             <option value="" disabled selected>Choose</option>
             <?php
-                 $conn=mysqli_connect("sql6.freemysqlhosting.net","sql6417933","N2sBfMWEYg","sql6417933");
+                // $conn=mysqli_connect("sql6.freemysqlhosting.net","sql6417933","N2sBfMWEYg","sql6417933");
+	$conn=mysqli_connect("bviwddg1tz90z0wafre4-mysql.services.clever-cloud.com", "uviuwebmnzw39gxi","cfNMc3nJk9obhTRRNk34", "bviwddg1tz90z0wafre4");
                 $sid=$_GET['id'];
                 $sql = "SELECT * FROM Users where Branch_Id!=$sid";
                 $result=mysqli_query($conn,$sql);
